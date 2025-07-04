@@ -47,7 +47,7 @@
     "webpack-dev-server": "4.9.3"
   },
   "scripts": {
-    "build": "BABEL_ENV=production webpack --node-env=prod",
+    "build": "cross-env BABEL_ENV=production webpack --node-env=prod",
     "start": "cross-env BABEL_ENV=development webpack serve --node-env=dev",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
